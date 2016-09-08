@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+	<title>Links</title>
+	<body>
+		<a href="file://home" target="_blank">Link to local directory!</a>
+		<br>
+		<a href="file://home/clouway/Desktop/task1 - text" target="_blank">Link to local text file!</a>
+		<br>
+		<a href="file://home/clouway/Desktop/task1 - localHtml" target="_blank">Link to local html page!</a>
+		<br>
+		<a href="http://www.zamunda.net" target="_blank">Link to Zamunda.net</a>
+	</body>
+</html>
