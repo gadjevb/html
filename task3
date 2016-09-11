@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Form</title>
+	    <script src="task4.js"></script>
+	</head>
+	<body>
+		<form method="post" name="Registration">
+		  <fieldset>
+			<legend>Personal information:</legend>
+			First name:<br>
+			<input type="text" name="firstname">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname">
+			<br>
+			EGN:<br>
+			<input type="text" name="egn">
+			<br>
+			Age:<br>
+			<input type="text" name="age">
+			<br>
+			Address:<br>
+			<input type="text" name="address">
+			<br>
+			Password:<br>
+			<input type="password" name="password" id="pass">
+			<br>
+			Confirm password:<br>
+			<input type="password" name="confirmPassword" id="conPass">
+			<br>
+			<input type="submit" value="Submit" onclick="return validateForm()">
+		  </fieldset>
+		</form>
+	</body>
+</html>
