@@ -12,7 +12,7 @@ function validateForm() {
         return false;
     }
 	if (lastName == null || lastName == "" || lastName.length > 15) {
-        alert("Last name must be filled out!");
+        alert("Last name must be filled out, 1 to 15 symbols allowed!");
         return false;
     }
 	if (!egn.match(/^\d+$/) || egn.length != 10) {
@@ -24,7 +24,7 @@ function validateForm() {
         return false;
     }
 	if (address == null || address == "" || address.length > 100) {
-        alert("Address must be filled out!");
+        alert("Address must be filled out, length must be hundred characters or less!");
         return false;
     }
 	if (password == null || password == "" || password.length > 18 || !password.match(/[a-zA-Z0-9]+$/)) {
