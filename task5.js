@@ -6,6 +6,8 @@ function validateForm() {
 	var address = document.forms["Registration"]["address"].value;
 	var password = document.getElementById("pass").value;
 	var passwordCon = document.getElementById("conPass").value;
+	var i;
+	var temp;
 	
     if (firstName == null || firstName == "" || firstName.length > 15) {
         alert("First name must be filled out, 1 to 15 symbols allowed!");
@@ -27,12 +29,32 @@ function validateForm() {
         alert("Address must be filled out, length must be hundred characters or less!");
         return false;
     }
-	if (password == null || password == "" || password.length > 18 || !password.match(/[a-zA-Z0-9]+$/)) {
-        alert("Password must be filled out, only latin letters and digits allowed!");
+	if (password == null || password == "" || password.length > 18) {
+        alert("Password must be filled out, up to 18 character are allowed!");
         return false;
-    }
-	if (passwordCon == null || passwordCon == "" || passwordCon.length > 18 || !passwordCon.match(/[a-zA-Z0-9]+$/)) {
-        alert("Confirm password must be filled out, only latin letters and digits allowed!");
+    }else{
+		for(i = 0; i < password.length; i++){
+			temp = password.charCodeAt(i);
+			if((temp > 47 && temp < 58) || (temp > 64 && temp < 91) || (temp > 96 && temp < 123)){
+				continue;			
+			}else{
+				alert("Only latin letters and digits allowed in field Password!");
+				return false;
+			}
+		}
+	}
+	if (passwordCon == null || passwordCon == "" || passwordCon.length > 18) {
+        alert("Confirm Password must be filled out, up to 18 character are allowed!");
         return false;
-    }
+    }else{
+		for(i = 0; i < passwordCon.length; i++){
+			temp = passwordCon.charCodeAt(i);
+			if((temp > 47 && temp < 58) || (temp > 64 && temp < 91) || (temp > 96 && temp < 123)){
+				continue;			
+			}else{
+				alert("Only latin letters and digits allowed in field Confirm Password!");
+				return false;
+			}
+		}
+	}
 }
