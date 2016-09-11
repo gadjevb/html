@@ -4,9 +4,9 @@
 		<title>Frames</title>
 	</head>
 	<frameset cols="20%,40%,40%">
-		<frame name="left" src="/home/clouway/Desktop/task2 - links" noresize="true"/>
-		<frame name="center" src="/home/clouway/Desktop/task2 - emptyFrame" noresize="true"/>
-		<frame name="right" src="/home/clouway/Desktop/task2 - emptyFrame" noresize="true"/>
+		<frame name="left" src="task2 - links" noresize="true"/>
+		<frame name="center" src="task2 - emptyFrame" noresize="true"/>
+		<frame name="right" src="task2 - emptyFrame" noresize="true"/>
 		<body>
 			<p> Your device doesn't support frames </p>
 		</body>
