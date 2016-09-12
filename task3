@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Form</title>
+	    <script src="task4.js"></script>
+	</head>
+	<body>
+		<form method="post" name="Registration">
+		  <fieldset>
+			<legend>Personal information:</legend>
+			Name:<br>
+			<input type="text" name="name" onblur="validateName()">
+		  </fieldset>
+		</form>
+	</body>
+</html>
