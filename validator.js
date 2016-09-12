@@ -1,7 +1,6 @@
 function validator() {
-	var value = document.getElementById("frac").value;
-	var array = value.split(/[.,]+/);
-	console.log(array);
+	var fraction = document.getElementById("frac").value;
+	var array = fraction.split(/[.,]+/);
 	if(array.length == 2){
 		var left = array[0];
 		var right = array[1];
