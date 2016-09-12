@@ -9,27 +9,25 @@
 		  <fieldset>
 			<legend>Personal information:</legend>
 			First name:<br>
-			<input type="text" name="firstname">
+			<input type="text" name="First name" onblur="validateName('First name')">
 			<br>
 			Last name:<br>
-			<input type="text" name="lastname">
+			<input type="text" name="Last name" onblur="validateName('Last name')">
 			<br>
 			EGN:<br>
-			<input type="text" name="egn">
+			<input type="text" name="egn" onblur="validateEGN('egn')">
 			<br>
 			Age:<br>
-			<input type="text" name="age">
+			<input type="text" name="age" onblur="validateAge('age')">
 			<br>
 			Address:<br>
-			<input type="text" name="address">
+			<input type="text" name="address" onblur="validateAddress('address')">
 			<br>
 			Password:<br>
-			<input type="password" name="password" id="pass">
+			<input type="password" name="Password" id="pass" onblur="validatePassword('Password','pass')">
 			<br>
 			Confirm password:<br>
-			<input type="password" name="confirmPassword" id="conPass">
-			<br>
-			<input type="submit" value="Submit" onclick="return validateForm()">
+			<input type="password" name="Confirm password" id="conPass" onblur="validatePassword('Confirm password','conPass')">
 		  </fieldset>
 		</form>
 	</body>
