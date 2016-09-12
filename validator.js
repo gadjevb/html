@@ -4,14 +4,14 @@ function validator() {
 	if(array.length == 2){
 		var left = array[0];
 		var right = array[1];
-		if(left.length > 0 && left.length < 11 && right.length > 0 && right.length < 6) {
+		if(left.length > 0 && left.length < 11 && right.length > 0 && right.length < 6 && left.match(/^\d+$/) && right.match(/^\d+$/)) {
 			alert("Valid!");
 		}else{
 			alert("Not valid!");
 		}
 	}else if(array.length == 1){
 		var left = array[0];
-		if(left.length > 0 && left.length < 11)	{
+		if(left.length > 0 && left.length < 11 && left.match(/^\d+$/))	{
 			alert("Valid!");
 		}else{
 			alert("Not valid!");
