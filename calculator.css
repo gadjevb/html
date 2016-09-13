@@ -1,62 +1,62 @@
 textarea {
 	resize: none;
 	width: 323px;
-    height: 60px;
+	height: 60px;
 	font-size: 50px;
 	text-align: right;
 	background-color: rgb(230,230,230);
 	border: 1px rgb(230,230,230);
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
 .digit {
 	width: 75px;
-    height: 45px;
+	height: 45px;
 	font-size: 20px;
 	background-color: rgb(230,230,230);
 	border-bottom-width: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
 .back {
 	width: 75px;
-    height: 45px;
+	height: 45px;
 	font-size: 20px;
 	background-color: rgb(250,130,60);
 	border-bottom-width: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
 .operator {
 	width: 75px;
-    height: 45px;
+	height: 45px;
 	font-size: 20px;
 	background-color: rgb(190,190,190);
 	border-bottom-width: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
 .equals {
 	width: 75px;
-    height: 45px;
+	height: 45px;
 	font-size: 20px;
 	background-color: rgb(127,256,127);
 	border-bottom-width: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
 .clear {
 	width: 327px;
-    height: 45px;
+	height: 45px;
 	font-size: 20px;
 	background-color: rgb(256,127,127);
 	border-bottom-width: 3px;
-    border-radius: 15px;
+	border-radius: 15px;
 	margin: 2px;
 }
 
@@ -65,5 +65,5 @@ textarea {
 	border-style: double;
 	border-radius: 15px;
 	width: 332px;
-    height: 308px;
+	height: 308px;
 }

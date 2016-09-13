@@ -8,16 +8,16 @@ function appendDigit(parameter) {
 }
 
 function appendOperator(parameter) {
-	if(operator){
+	if(operator) {
 		var val = document.getElementById("present").value;
 		if(val.length == 0 && parameter != '-'){
-			alert("Equation must not start with operator!");		
-		}else{
+			alert("Equation must not start with operator!");
+		}else {
 			val = val + parameter;
 			document.getElementById("present").value = val;
 			operator = false;
 		}
-	}else{
+	}else {
 		alert("You are not allowed to have two consecutive operators!");
 	}
 }
@@ -28,11 +28,11 @@ function clr() {
 }
 
 function equate() {
-	if(operator){
+	if(operator) {
 		var val = document.getElementById("present").value;
 		var answer = eval(val);
 		document.getElementById("present").value = answer;
-	}else{
+	}else {
 		alert("The equation must end with digit, not operator!");
 	}
 }
@@ -43,8 +43,8 @@ function removeLast() {
 	document.getElementById("present").value = val;
 	var last = val.substring(val.length-1,val.length);
 	if(last == '+' || last == '-' || last == '/' || last == '*'){
-		operator = false;	
-	}else{
-		operator = true;	
+		operator = false;
+	}else {
+		operator = true;
 	}
 }
