@@ -37,7 +37,7 @@ function equate() {
 	}
 }
 
-function remove() {
+function removeLast() {
 	var val = document.getElementById("present").value;
 	val = val.substring(0,val.length-1);
 	document.getElementById("present").value = val;
