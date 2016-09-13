@@ -9,7 +9,7 @@ function validateName(name) {
 function validateEGN(egn) {
 	var value = document.forms["Registration"][egn].value;
 
-	if (!value.match(/^\d+$/) || value.length != 10) {
+	if (!value.match(/^\d{10}$/)) {
         alert("EGN must be filled out with exactly 10 numbers!");
     }
 }
