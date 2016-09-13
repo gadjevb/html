@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Calculator - task6</title>
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<script src="calculator.js"></script>
+	</head>
+	<body>
+		<div class="calculator">
+			<textarea id="present" name="screen" readonly ></textarea>
+			<br>
+			<button class="digit" type="button" name="7" onclick="appendDigit('7')">7</button>
+			<button class="digit" type="button" name="8" onclick="appendDigit('8')">8</button>
+			<button class="digit" type="button" name="9" onclick="appendDigit('9')">9</button>
+			<button class="operator" type="button" name="+" onclick="appendOperator('+')">+</button>
+			<br>
+			<button class="digit" type="button" name="4" onclick="appendDigit('4')">4</button>
+			<button class="digit" type="button" name="5" onclick="appendDigit('5')">5</button>
+			<button class="digit" type="button" name="6" onclick="appendDigit('6')">6</button>
+			<button class="operator" type="button" name="-" onclick="appendOperator('-')">-</button>
+			<br>
+			<button class="digit" type="button" name="1" onclick="appendDigit('1')">1</button>
+			<button class="digit" type="button" name="2" onclick="appendDigit('2')">2</button>
+			<button class="digit" type="button" name="3" onclick="appendDigit('3')">3</button>
+			<button class="operator" type="button" name="/" onclick="appendOperator('/')">/</button>
+			<br>
+			<button class="back" type="button" name="R" onclick="remove()">R</button>
+			<button class="digit" type="button" name="0" onclick="appendDigit('0')">0</button>
+			<button class="equals" type="button" name="=" onclick="equate()">=</button>
+			<button class="operator" type="button" name="*" onclick="appendOperator('*')">*</button>
+			<br>
+			<button class="clear" type="button" name="C" onclick="clr()">C</button>
+		</div>
+	</body>
+</html>
